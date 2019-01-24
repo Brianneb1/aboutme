@@ -31,3 +31,9 @@ How to publish a README.md with GitHub pages:
 
 Visit this link for more assistance:
 [GitHub Info](https://help.github.com/articles/create-a-repo/ "Creating a repo")
+
+## Recommended Resources
+View these links to learn more about the process of web development.
+- [Web Dev 101](https://www.theodinproject.com/courses/web-development-101 "Web Dev 101")
+- [Web Dev Basics](https://studywebdevelopment.com/web-development-basics-for-beginners.html "Basics for Beginners")
+- [Web Dev Guide](https://medium.com/@sebastienphl/a-practical-guide-to-learning-the-basics-of-web-programming-79961f3f3baa "A Practical Guide")
