@@ -38,6 +38,7 @@ View these links to learn more about the process of web development.
 - [Web Dev Basics](https://studywebdevelopment.com/web-development-basics-for-beginners.html "Basics for Beginners")
 - [Web Dev Guide](https://medium.com/@sebastienphl/a-practical-guide-to-learning-the-basics-of-web-programming-79961f3f3baa "A Practical Guide")
 
+
 ## Contributors
 Brianne Bender
 
