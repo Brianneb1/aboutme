@@ -1,0 +1,1 @@
+This repository will be used for information about Markdown and GitHub pages. It also serves as a basis for my aboutme assignment.
