@@ -37,3 +37,13 @@ View these links to learn more about the process of web development.
 - [Web Dev 101](https://www.theodinproject.com/courses/web-development-101 "Web Dev 101")
 - [Web Dev Basics](https://studywebdevelopment.com/web-development-basics-for-beginners.html "Basics for Beginners")
 - [Web Dev Guide](https://medium.com/@sebastienphl/a-practical-guide-to-learning-the-basics-of-web-programming-79961f3f3baa "A Practical Guide")
+
+## Contributors
+Brianne Bender
+
+s529231@nwmissouri.edu
+
+Sophomore B.S. in Computer Science
+
+![Corgi](https://hdfreewallpaper.net/wp-content/uploads/2015/12/Cute-Pembroke-Welsh-Corgi-short-free-hd-wallappers.jpg "Good boy")
+
