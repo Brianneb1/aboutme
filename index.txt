@@ -1,2 +1,0 @@
-This repository will be used for general information about Markdown and GitHub pages. It also serves as a basis for my aboutme assignment.
-I am a sophomore Computer Science major at Northwest Missouri State Univerity, set to graduate in December 2020.
