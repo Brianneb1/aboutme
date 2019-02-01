@@ -1,0 +1,30 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    min-height: 75rem;
+    padding-top: 4.5rem;
+}
+
+
+h1 {
+    border-style : solid;
+    padding-top : 1em;
+    padding-bottom : 1em;
+    background-color : slateblue;
+    color : white;
+
+}
+
+/*class*/
+.important{
+    color: gold
+}
+
+/*id*/
+#current{
+
+}
+
+#myname{
+    color: yellow;
+}
+
