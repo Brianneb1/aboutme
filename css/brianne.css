@@ -1,3 +1,4 @@
+
 body{
     font-family: 'Roboto Condensed', sans-serif;
     min-height: 75rem;
@@ -10,18 +11,33 @@ h1 {
     padding-top : 1em;
     padding-bottom : 1em;
     padding-left: 1em;
-    background-color : lightslategray;
+    background-color : rgb(146, 167, 187);
     color : white;
 
+}
+
+h2{
+    color:rgb(77, 117, 153); 
 }
 
 section{
     margin:1rem;
     padding:2rem;
-    background-color:lightsteelblue;
+    background-color: rgb(211, 169, 169);
     border-style: dashed;
     border-radius: 2em;
+    border-color: firebrick;
     
+
+}
+
+aside{
+    margin:1rem;
+    padding:2rem;
+    border-style: dotted;
+    border-radius: 1em;
+    border-color: firebrick;
+    background-color: rgb(146, 167, 187);
 
 }
 
@@ -30,15 +46,26 @@ section{
     color: firebrick;
 }
 
-/*id*/
-#current{
-
+.video{
+    margin: 1rem;
+    margin-right: 2rem;
 }
+
+#picture{
+    width: 11rem;
+    height: auto;
+    margin: 1rem;
+}
+
+#icon{
+    width:1rem;
+    height: auto;
+}
+
 
 #myname{
     color: firebrick;
 }
 
-/*need 3 more selectors (one of each)
-use CSS grid or Flexbox with child elements to layout main components
-validate html and css with link in instructions*/
+
+/*validate html and css with link in instructions*/
