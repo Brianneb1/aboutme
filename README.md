@@ -1,5 +1,14 @@
 # aboutme
 
+## Citations
+For my personal webpage, I utilized:
+- Bootstrap examples for my nav bar and contact page form
+- [Table Generator](https://www.tablesgenerator.com/html_tables "Table Generator")
+- Bootstrap CSS library
+- JavaScript library
+- Icons from LinkedIn and GitHub
+- For reference on JavaScript development I found [this site](https://www.w3schools.com/js/js_validation.asp "Reference") helpful
+
 ## Links
 
 - [Webpage](https://profcase.github.io/working-with-markdown/ "Working With Markdown Webpage")
