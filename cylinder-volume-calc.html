@@ -71,17 +71,23 @@
 
                         <div class="row">
 
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="md-form mb-0">
                                     <input type="text" id="radius" name="radius" class="form-control">
                                     <label for="radius" class="">Enter Radius (cm)</label>
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="md-form mb-0">
                                     <input type="text" id="height" name="height" class="form-control">
                                     <label for="height" class="">Enter Height (cm)</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="md-form mb-0">
+                                    <h3 id="answerText">Answer goes here.</h3>
                                 </div>
                             </div>
 
@@ -90,7 +96,7 @@
                     </form>
 
                     <div class="text-center text-md-left">
-                        <a class="btn btn-primary" onclick="calcVolume()">Calculate</a> <!-- for javascript testing-->
+                        <a class="btn btn-primary" id="calcbtn" onclick="calcVolume()">Calculate</a> <!-- for javascript testing-->
                     </div>
 
                 </div>
@@ -118,15 +124,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <script>
-        function calcVolume() 
-        {
-            var radius = document.forms["calculate-form"]["radius"].value;
-            var height = document.forms["calculate-form"]["height"].value;
-            var volume = 3.14 * radius * radius * height;
-            window.alert("The volume is: " + volume + " cubic centimeters.");
-        }
-    </script>
+    <script src="./calc.js"></script>
 
     <!--LinkedIn-->
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
