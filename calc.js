@@ -1,5 +1,5 @@
 
-console.log('INFO: Starting to read case.js');
+console.log('INFO: Starting to read calc.js');
 
 console.log('INFO: Getting access to elements');
 
@@ -8,16 +8,31 @@ const heightElement = document.getElementById("height");
 const btnElement = document.getElementById("calcbtn");
 const answerElement = document.getElementById("answerText");
 
+const radius = radiusElement.value;
+const height = heightElement.value;
+
+/* local storage part
+window.localStorage.setItem('radius', radiusElement);
+window.localStorage.setItem('height', heightElement);
+
+JSON.parse(window.localStorage.getItem('user'));*/
+
 console.log('INFO: Configuring event handlers');
 
-btnElement.onClick = calcVolume();
+btnElement.onClick = function(){calcVolume2(radius,height)};
 
 console.log('INFO: Declaring functions');
 
+/*
 function calcVolume() {
     const radius = radiusElement.value;
     const height = heightElement.value;
     const volume = 3.14 * radius * radius * height;
+    answerElement.innerHTML = `The volume is: ${volume} cubic centimeters.`
+}*/
+
+function calcVolume2(r,h){
+    const volume = 3.14 * r * r * h;
     answerElement.innerHTML = `The volume is: ${volume} cubic centimeters.`
 }
 
