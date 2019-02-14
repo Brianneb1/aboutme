@@ -20,7 +20,7 @@ JSON.parse(window.localStorage.getItem('user'));*/
 
 console.log('INFO: Configuring event handlers');
 
-btnElement.addEventListener("click", function(){calcVolume2(radius,height)});
+btnElement.addEventListener('click', function(){calcVolume(radius,height)});
 
 console.log('INFO: Declaring functions');
 
@@ -32,7 +32,7 @@ function calcVolume() {
     answerElement.innerHTML = `The volume is: ${volume} cubic centimeters.`
 }*/
 
-function calcVolume2(r,h){
+function calcVolume(r,h){
     const volume = 3.14 * r * r * h;
     answerElement.innerHTML = `The volume is: ${volume} cubic centimeters.`
 }
