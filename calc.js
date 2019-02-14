@@ -10,6 +10,7 @@ const answerElement = document.getElementById("answerText");
 
 const radius = radiusElement.value;
 const height = heightElement.value;
+console.log("radius", radius);
 
 /* local storage part
 window.localStorage.setItem('radius', radiusElement);
@@ -19,7 +20,7 @@ JSON.parse(window.localStorage.getItem('user'));*/
 
 console.log('INFO: Configuring event handlers');
 
-btnElement.onClick = function(){calcVolume2(radius,height)};
+btnElement.addEventListener("click", function(){calcVolume2(radius,height)});
 
 console.log('INFO: Declaring functions');
 
