@@ -12,29 +12,36 @@ const radius = radiusElement.value;
 const height = heightElement.value;
 console.log("radius", radius);
 
-/* local storage part
-window.localStorage.setItem('radius', radiusElement);
-window.localStorage.setItem('height', heightElement);
-
-JSON.parse(window.localStorage.getItem('user'));*/
+//set local storage
+let storedRadius = localStorage.getItem("radius");
+let storedHeight = localStorage.getItem("height");
+document.getElementById("radius").innerHTML = parseFloat(storedRadius);
+document.getElementById("height").innerHTML = parseFloat(storedHeight);
 
 console.log('INFO: Configuring event handlers');
 
-btnElement.addEventListener('click', function(){calcVolume(radius,height)});
+btnElement.addEventListener('click', function(){calcVolume(radiusElement.value,heightElement.value)});
 
 console.log('INFO: Declaring functions');
 
-/*
-function calcVolume() {
-    const radius = radiusElement.value;
-    const height = heightElement.value;
-    const volume = 3.14 * radius * radius * height;
-    answerElement.innerHTML = `The volume is: ${volume} cubic centimeters.`
-}*/
-
 function calcVolume(r,h){
     const volume = 3.14 * r * r * h;
-    answerElement.innerHTML = `The volume is: ${volume} cubic centimeters.`
+
+    localStorage.setItem("radius", JSON.stringify(r));
+    localStorage.setItem("height", JSON.stringify(h));
+
+    if(r < 0 || h < 0){
+        answerElement.innerHTML = `Invalid input - cannot be negative`
+        return -1;
+    }
+    else if(r=="" || h==""){
+        answerElement.innerHTML = `Invalid input - cannot be null`
+        return null;
+    }
+    else{
+        answerElement.innerHTML = `The volume is: ${volume} cubic centimeters.`
+        return volume;
+    }
 }
 
 console.log('INFO: Done loading, waiting for an event'); 

@@ -8,12 +8,12 @@
     <meta name="author" content="Brianne Bender">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
@@ -67,37 +67,32 @@
 
                 <div class="col-md-9 mb-md-0 mb-5">
 
-                    <form id="calculate-form" name="calculate-form" action="#" method="POST">
+                    <div class="row">
 
-                        <div class="row">
-
-                            <div class="col-md-4">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="radius" name="radius" class="form-control">
-                                    <label for="radius" class="">Enter Radius (cm)</label>
-                                </div>
+                        <div class="col-md-4">
+                            <div class="md-form mb-0">
+                                <input type="text" id="radius" name="radius" class="form-control">
+                                <label for="radius" class="">Enter Radius (cm)</label>
                             </div>
-
-                            <div class="col-md-4">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="height" name="height" class="form-control">
-                                    <label for="height" class="">Enter Height (cm)</label>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="md-form mb-0">
-                                    <h3 id="answerText">Answer goes here.</h3>
-                                </div>
-                            </div>
-
                         </div>
 
-                    </form>
+                        <div class="col-md-4">
+                            <div class="md-form mb-0">
+                                <input type="text" id="height" name="height" class="form-control">
+                                <label for="height" class="">Enter Height (cm)</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="md-form mb-0">
+                                <h3 id="answerText">Answer goes here.</h3>
+                            </div>
+                        </div>
+
+                    </div>
 
                     <div class="text-center text-md-left">
-                        <!--<a class="btn btn-primary" id="calcbtn" onclick="calcVolume()">Calculate</a>  for javascript testing-->
-                        <a class="btn btn-primary" id="calcbtn" onclick=calcVolume()>Calculate</a> <!-- for javascript testing-->
+                        <a class="btn btn-primary" id="calcbtn" onclick=calcVolume()>Calculate</a>
                     </div>
 
                 </div>
@@ -105,7 +100,6 @@
             </div>
 
         </section>
-
 
     </main>
 
@@ -118,11 +112,14 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
     <script src="./calc.js"></script>
