@@ -76,7 +76,7 @@ function getMathFact() {
   async function mathHandler() {
     const fact = await getMathFact();
     console.log(fact);
-    mathElement.innerHTML = fact;
+    $("#math").html(fact);
   }
 
 console.log('INFO: Done loading, waiting for an event'); 
