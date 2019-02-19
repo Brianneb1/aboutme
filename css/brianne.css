@@ -111,5 +111,10 @@ aside{
     color: firebrick;
 }
 
+#math{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+
 
 /*validate html and css with link in instructions*/
