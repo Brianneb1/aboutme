@@ -8,6 +8,7 @@ For my personal webpage, I utilized:
 - JavaScript library
 - Icons from LinkedIn and GitHub
 - For reference on JavaScript development I found [this site](https://www.w3schools.com/js/js_validation.asp "Reference") helpful
+- I used [this](http://numbersapi.com/#42) API for the math facts on my calculation page
 
 ## Links
 
