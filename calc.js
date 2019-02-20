@@ -81,7 +81,7 @@ function getMathFact() {
       req.ontimeout = function () {
         reject('Error - timed out: ' + req.time)
       }
-      req.open("GET", "https://numbersapi.com/random/math", true);  
+      req.open("GET", "http://numbersapi.com/random/math", true);  
       req.send();
     })
   }
