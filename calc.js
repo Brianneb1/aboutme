@@ -13,13 +13,26 @@ const radius = radiusElement.value;
 const height = heightElement.value;
 console.log("radius", radius);
 
-//set local storage
-let storedRadius = localStorage.getItem("radius");
-let storedHeight = localStorage.getItem("height");
-document.getElementById("radius").innerHTML = parseFloat(storedRadius);
-document.getElementById("height").innerHTML = parseFloat(storedHeight);
+
 
 console.log('INFO: Configuring event handlers');
+
+//local storage based on Professor Case's emailed example
+window.addEventListener('load', (event) => {
+  console.log(' Starting initialization!')
+  if (localStorage.getItem('radius')){
+    document.getElementById('radius').value = parseInt(localStorage.radius)
+  }
+  if (localStorage.getItem('height')){
+    document.getElementById('height').value = parseInt(localStorage.height)
+  }
+})
+
+//clear local storage
+document.getElementById('clearStorage').addEventListener('click', () =>{
+  localStorage.removeItem('radius')
+  localStorage.removeItem('height')
+})
 
 btnElement.addEventListener('click', function(){calcVolume(radiusElement.value,heightElement.value)});
 mathElement.addEventListener('dblclick', function(){mathHandler()});
@@ -29,8 +42,8 @@ console.log('INFO: Declaring functions');
 function calcVolume(r,h){
     const volume = 3.14 * r * r * h;
 
-    localStorage.setItem("radius", JSON.stringify(r));
-    localStorage.setItem("height", JSON.stringify(h));
+    localStorage.setItem('radius', r);
+    localStorage.setItem('height', h)
 
     if(r < 0 || h < 0){
         answerElement.innerHTML = `Invalid input - cannot be negative`
