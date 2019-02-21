@@ -7,7 +7,7 @@ const radiusElement = document.getElementById("radius");
 const heightElement = document.getElementById("height");
 const btnElement = document.getElementById("calcbtn");
 const answerElement = document.getElementById("answerText");
-const mathElement = document.getElementById("math");
+const quoteElement = document.getElementById("quote");
 
 const radius = radiusElement.value;
 const height = heightElement.value;
@@ -35,7 +35,7 @@ document.getElementById('clearStorage').addEventListener('click', () =>{
 })
 
 btnElement.addEventListener('click', function(){calcVolume(radiusElement.value,heightElement.value)});
-mathElement.addEventListener('dblclick', function(){mathHandler()});
+quoteElement.addEventListener('dblclick', function(){quoteHandler()});
 
 console.log('INFO: Declaring functions');
 
@@ -64,7 +64,7 @@ function calcVolume(r,h){
 }
 
 //based off Professor Case's example in the slides
-function getMathFact() {
+function getQuote() {
     return new Promise(function (resolve, reject) {  
       const req = new XMLHttpRequest();  
       req.timeout = 2000; 
@@ -81,15 +81,15 @@ function getMathFact() {
       req.ontimeout = function () {
         reject('Error - timed out: ' + req.time)
       }
-      req.open("GET", "http://numbersapi.com/random/math", true);  
+      req.open("GET", "https://ron-swanson-quotes.herokuapp.com/v2/quotes", true);  
       req.send();
     })
   }
 
-  async function mathHandler() {
-    const fact = await getMathFact();
+  async function quoteHandler() {
+    const fact = await getQuote();
     console.log(fact);
-    $("#math").html(fact);
+    $("#quote").html(fact);
   }
 
 console.log('INFO: Done loading, waiting for an event'); 
